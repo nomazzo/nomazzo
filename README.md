@@ -1,4 +1,5 @@
-# 日本語バージョン
+# Japanese version
+English version follows.
 
 ## モバイルアプリ開発 / 取引API・Bot / 市場データ基盤 / 機械学習
 
