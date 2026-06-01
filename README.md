@@ -20,6 +20,7 @@ App Store / Google Play向けのアプリ開発、リリース、運用、広告
 
 * iOSアプリ開発
 
+  * 150を超えるアプリ開発＆リリース経験
   * Swift
   * SwiftUI
   * UIKit
