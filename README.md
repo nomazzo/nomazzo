@@ -60,6 +60,8 @@ App Store / Google Play向けのアプリ開発、リリース、運用、広告
 * Binance Depthデータのレコーディング・解析
 * Hyperliquid APIを用いたMM Bot開発
 * MeteoraでのLP Bot開発
+* オーダーブック、在庫リスク、スプレッド管理を意識したMM / HFT系ロジック設計
+* 実運用コードを公開せず、mock / simulator / offline sampleへ安全に切り出す構成設計
 * 市場データの保存、前処理、特徴量生成、検証用データセット構築
 
 ### Machine Learning
@@ -80,21 +82,21 @@ App Store / Google Play向けのアプリ開発、リリース、運用、広告
 
 | Repository                    | Description                                                |
 | ----------------------------- | ---------------------------------------------------------- |
-| `mobile-app-portfilio`        | iOS / Androidアプリの開発・リリース実績をまとめたポートフォリオ / ケーススタディ集 |
-| `ios-photo-editor-sample`     | Swift / SwiftUIによるペインティング風カメラアプリのポートフォリオサンプル |
-| `ios-utility-app-sample`      | SwiftUI / SwiftDataによるホームタスク管理アプリのポートフォリオサンプル |
-| `android-photo-editor-sample` | Kotlin / Jetpack ComposeによるAndroidフォトエディターのポートフォリオサンプル |
-| `ios-appstore-production-kit` | AdMob、IAP、ローカライズ、レビュー導線など、iOSアプリ公開・運用に必要な実装サンプル |
+| [mobile-app-portfolio](https://github.com/nomazzo/mobile-app-portfolio) | iOS / Androidアプリの開発・リリース実績をまとめたポートフォリオ / ケーススタディ集 |
+| [ios-photo-editor-sample](https://github.com/nomazzo/ios-photo-editor-sample) | Swift / SwiftUIによるペインティング風カメラアプリのポートフォリオサンプル |
+| [ios-utility-app-sample](https://github.com/nomazzo/ios-utility-app-sample) | SwiftUI / SwiftDataによるホームタスク管理アプリのポートフォリオサンプル |
+| [android-photo-editor-sample](https://github.com/nomazzo/android-photo-editor-sample) | Kotlin / Jetpack ComposeによるAndroidフォトエディターのポートフォリオサンプル |
+| [ios-appstore-production-kit](https://github.com/nomazzo/ios-appstore-production-kit) | AdMob、IAP、ローカライズ、レビュー導線など、iOSアプリ公開・運用に必要な実装サンプル |
 
-### Trading / Market Data / ML（準備中）
+### Trading / Market Data / ML（公開済み）
 
-| Repository                     | Description                                    |
-| ------------------------------ | ---------------------------------------------- |
-| `market-data-recorder-aws`     | 取引所APIやWebSocketから市場データを継続取得し、AWS上で保存・監視するサンプル |
-| `trading-bot-framework-sample` | 取引Botのアーキテクチャ、発注抽象化、リスク管理、mock実行環境を示すサンプル      |
-| `lightgbm-market-ml-pipeline`  | 市場データを対象にしたLightGBMの特徴量生成・学習・検証パイプライン          |
-| `defi-lp-bot-simulator`        | DeFiのLPポジション管理、リバランス、手数料、リスク評価を扱うシミュレーター       |
-| `hyperliquid-mm-simulator`     | オーダーブック、在庫リスク、スプレッド管理を扱うマーケットメイクBotのシミュレーター    |
+| Repository                    | Description                                                |
+| ----------------------------- | ---------------------------------------------------------- |
+| [market-data-recorder-aws](https://github.com/nomazzo/market-data-recorder-aws) | Binance / Hyperliquid / Bitget / MEXCなどのpublic WebSocket市場データを記録するAWS運用想定のサンプル |
+| [trading-bot-framework-sample](https://github.com/nomazzo/trading-bot-framework-sample) | 取引Botの責務分離、発注抽象化、RiskGuard、mock実行環境を示すPythonサンプル |
+| [lightgbm-market-ml-pipeline](https://github.com/nomazzo/lightgbm-market-ml-pipeline) | 市場データを対象にした特徴量生成、時系列split、LightGBM学習・評価パイプライン |
+| [defi-lp-bot-simulator](https://github.com/nomazzo/defi-lp-bot-simulator) | DeFi LPポジションのrange管理、fee、inventory drift、risk haltを扱うoffline simulator |
+| [hyperliquid-mm-simulator](https://github.com/nomazzo/hyperliquid-mm-simulator) | Hyperliquidを題材に、板情報、在庫リスク、quote生成、約定仮定を扱うMM simulator |
 
 ---
 
@@ -122,6 +124,9 @@ App Store / Google Play向けのアプリ開発、リリース、運用、広告
 * PythonによるAPI連携・自動化
 * 取引APIを用いたデータ取得・Bot開発
 * 市場データの収集・保存・分析基盤構築
+* Binance Depth / Hyperliquid L2 / BBOを使った板情報処理
+* Market making / HFT寄りのquote、inventory、risk管理ロジック設計
+* DeFi LPポジションの監視・会計・シミュレーター構築
 * LightGBMを用いた分析・検証パイプライン構築
 
 ---
@@ -193,6 +198,8 @@ Rather than being only an iOS developer, I aim to position myself as an engineer
 * Binance depth data recording and analysis
 * Market-making bot development using Hyperliquid API
 * LP bot development on Meteora
+* Order-book based market making and HFT-oriented logic design
+* Safe extraction of private production code into mock, simulator, and offline portfolio samples
 * Market data storage, preprocessing, feature engineering, and research dataset creation
 
 ### Machine Learning
@@ -213,21 +220,21 @@ Rather than being only an iOS developer, I aim to position myself as an engineer
 
 | Repository                    | Description                                                                                         |
 | ----------------------------- | --------------------------------------------------------------------------------------------------- |
-| `mobile-app-portfilio`        | A mobile app portfolio and case-study collection covering iOS / Android development and release experience |
-| `ios-photo-editor-sample`     | A Swift / SwiftUI portfolio sample for a painting-style iOS camera app with real-time filters       |
-| `ios-utility-app-sample`      | A SwiftUI / SwiftData portfolio sample for a home task management utility app                       |
-| `android-photo-editor-sample` | A Kotlin / Jetpack Compose portfolio sample for Android photo editor app development                |
-| `ios-appstore-production-kit` | Production-oriented iOS app components such as AdMob, IAP, localization, and review prompt flows    |
+| [mobile-app-portfolio](https://github.com/nomazzo/mobile-app-portfolio) | A mobile app portfolio and case-study collection covering iOS / Android development and release experience |
+| [ios-photo-editor-sample](https://github.com/nomazzo/ios-photo-editor-sample) | A Swift / SwiftUI portfolio sample for a painting-style iOS camera app with real-time filters       |
+| [ios-utility-app-sample](https://github.com/nomazzo/ios-utility-app-sample) | A SwiftUI / SwiftData portfolio sample for a home task management utility app                       |
+| [android-photo-editor-sample](https://github.com/nomazzo/android-photo-editor-sample) | A Kotlin / Jetpack Compose portfolio sample for Android photo editor app development                |
+| [ios-appstore-production-kit](https://github.com/nomazzo/ios-appstore-production-kit) | Production-oriented iOS app components such as AdMob, IAP, localization, and review prompt flows    |
 
-### Trading / Market Data / ML (In Preparation)
+### Trading / Market Data / ML (Published)
 
 | Repository                     | Description                                                                                     |
 | ------------------------------ | ----------------------------------------------------------------------------------------------- |
-| `market-data-recorder-aws`     | A sample architecture for recording market data from exchange APIs and WebSocket streams on AWS |
-| `trading-bot-framework-sample` | A trading bot architecture sample with order abstraction, risk control, and mock execution      |
-| `lightgbm-market-ml-pipeline`  | A reproducible LightGBM pipeline for market data feature engineering, training, and validation  |
-| `defi-lp-bot-simulator`        | A simulator for DeFi LP position management, rebalancing, fee estimation, and risk analysis     |
-| `hyperliquid-mm-simulator`     | A market-making simulator focused on order book handling, inventory risk, and spread management |
+| [market-data-recorder-aws](https://github.com/nomazzo/market-data-recorder-aws) | A public WebSocket market data recorder sample for Binance, Hyperliquid, Bitget, MEXC, and AWS-oriented operation |
+| [trading-bot-framework-sample](https://github.com/nomazzo/trading-bot-framework-sample) | A Python trading bot architecture sample with order abstraction, RiskGuard, and mock execution |
+| [lightgbm-market-ml-pipeline](https://github.com/nomazzo/lightgbm-market-ml-pipeline) | A market-data ML pipeline covering feature engineering, chronological split, LightGBM training, and evaluation |
+| [defi-lp-bot-simulator](https://github.com/nomazzo/defi-lp-bot-simulator) | An offline simulator for DeFi LP range management, fee accounting, inventory drift, and risk halt logic |
+| [hyperliquid-mm-simulator](https://github.com/nomazzo/hyperliquid-mm-simulator) | A Hyperliquid-themed market-making simulator for order books, inventory risk, quote generation, and fill assumptions |
 
 ---
 
@@ -255,6 +262,9 @@ Rather than being only an iOS developer, I aim to position myself as an engineer
 * Python automation and API integration
 * Trading API data collection and bot development
 * Market data recording and analysis infrastructure
+* Binance Depth / Hyperliquid L2 / BBO based order-book processing
+* Market making and HFT-oriented quote, inventory, and risk management logic
+* DeFi LP position monitoring, accounting, and simulator development
 * LightGBM-based research and validation pipelines
 
 ---
