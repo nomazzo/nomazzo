@@ -74,18 +74,19 @@ App Store / Google Play向けのアプリ開発、リリース、運用、広告
 
 ---
 
-## GitHubで公開予定の主なプロジェクト
+## GitHubの主なプロジェクト
 
-### Mobile App
+### Mobile App（公開済み）
 
-| Repository                  | Description                                   |
-| --------------------------- | --------------------------------------------- |
-| `ios-photo-editor-sample`   | Swift / SwiftUIによるフォトエディター系iOSアプリのポートフォリオサンプル |
-| `mobile-app-production-kit` | AdMob、IAP、ローカライズ、レビュー導線など、アプリ公開・運用に必要な実装サンプル  |
-| `mobile-app-portfolio`      | iOS / Androidアプリの開発・リリース実績をまとめたケーススタディ集       |
-| `objc-swift-interop-sample` | Objective-C資産とSwiftの連携、既存iOSアプリ改修を想定したサンプル    |
+| Repository                    | Description                                                |
+| ----------------------------- | ---------------------------------------------------------- |
+| `mobile-app-portfilio`        | iOS / Androidアプリの開発・リリース実績をまとめたポートフォリオ / ケーススタディ集 |
+| `ios-photo-editor-sample`     | Swift / SwiftUIによるペインティング風カメラアプリのポートフォリオサンプル |
+| `ios-utility-app-sample`      | SwiftUI / SwiftDataによるホームタスク管理アプリのポートフォリオサンプル |
+| `android-photo-editor-sample` | Kotlin / Jetpack ComposeによるAndroidフォトエディターのポートフォリオサンプル |
+| `ios-appstore-production-kit` | AdMob、IAP、ローカライズ、レビュー導線など、iOSアプリ公開・運用に必要な実装サンプル |
 
-### Trading / Market Data / ML
+### Trading / Market Data / ML（準備中）
 
 | Repository                     | Description                                    |
 | ------------------------------ | ---------------------------------------------- |
@@ -206,18 +207,19 @@ Rather than being only an iOS developer, I aim to position myself as an engineer
 
 ---
 
-## Planned Portfolio Repositories
+## Portfolio Repositories
 
-### Mobile App
+### Mobile App (Published)
 
-| Repository                  | Description                                                                                         |
-| --------------------------- | --------------------------------------------------------------------------------------------------- |
-| `ios-photo-editor-sample`   | A Swift / SwiftUI portfolio sample for photo editor-style iOS app development                       |
-| `mobile-app-production-kit` | Production-oriented mobile app components such as AdMob, IAP, localization, and review prompt flows |
-| `mobile-app-portfolio`      | Case studies of iOS / Android app development and release experience                                |
-| `objc-swift-interop-sample` | A sample project for Objective-C and Swift interoperability in existing iOS apps                    |
+| Repository                    | Description                                                                                         |
+| ----------------------------- | --------------------------------------------------------------------------------------------------- |
+| `mobile-app-portfilio`        | A mobile app portfolio and case-study collection covering iOS / Android development and release experience |
+| `ios-photo-editor-sample`     | A Swift / SwiftUI portfolio sample for a painting-style iOS camera app with real-time filters       |
+| `ios-utility-app-sample`      | A SwiftUI / SwiftData portfolio sample for a home task management utility app                       |
+| `android-photo-editor-sample` | A Kotlin / Jetpack Compose portfolio sample for Android photo editor app development                |
+| `ios-appstore-production-kit` | Production-oriented iOS app components such as AdMob, IAP, localization, and review prompt flows    |
 
-### Trading / Market Data / ML
+### Trading / Market Data / ML (In Preparation)
 
 | Repository                     | Description                                                                                     |
 | ------------------------------ | ----------------------------------------------------------------------------------------------- |
@@ -261,3 +263,5 @@ Rather than being only an iOS developer, I aim to position myself as an engineer
 
 Public repositories do not include commercial app source code, production Bundle IDs, production AdMob IDs, IAP settings, API keys, private keys, live trading strategies, or private datasets.
 The repositories are designed as portfolio samples, mock implementations, simulators, and case studies.
+
+
